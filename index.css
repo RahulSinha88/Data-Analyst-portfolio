@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif ;
+}
+body{
+    
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://wallpapers.com/images/hd/professional-background-53kprhryuo5bszds.jpg");
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 70px;
+    line-height: 120px;
+    z-index: 111;
+
+}
+
+.logo{
+    display: flex;
+    font-style:oblique;
+    font-size: 40px;
+    font-weight: 700;
+    color:#f31404;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    
+} 
+b{
+    font-size: 70px;
+    color: #f7f5fa;
+}
+.navItem{
+    display: flex;
+}
+.Home li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItem li a{
+    font-size: -85px;
+    color: #d6d1d1;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+.linked li a:hover,.links a:hover{
+    color: #f3f3e3;
+}
+.links a{
+    font-size: 25px;
+    color: #c5c2b0;
+    margin: 25px 25px;
+    box-shadow: 0 15px 10px rgba(245, 238, 238, 0.59);
+
+}
+.wrapper {
+    display: flex;
+    width: 103%;
+   top: 10px;
+    margin-top: 18%;
+    height: calc(125vh - 400px);
+    justify-content: flex-start;
+    align-items: left;
+    padding: 0 10%;
+    overflow:-moz-hidden-unscrollable;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#b60202,rgb(201, 172, 179));
+    animation: object1 9s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#ff0000,pink);
+    animation: object2 90s linear infinite;
+}
+.cols{
+    width: 100%;
+}
+.cols0{
+    z-index: 50;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 12px;
+    color: rgb(243, 243, 228);
+    
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #e71010;
+}
+h1{
+    display: block;
+    font-size: 3em;
+    font-weight: 300;
+    color: #ebe1e1;
+}
+.multiText{
+    color: #f00b0b;
+    text-transform: capitalize;
+    
+
+}
+p{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    color: #04cbee;
+  
+}
+.btns{
+    width: 100%;
+    position: relative;
+    left: -10px;
+    
+}
+.btns a{
+    text-decoration: none;
+    color: #ee0404;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 400;
+    color: #e70909;
+    background-color: #000000;
+    padding: 8px 24px;
+    margin: 90px 28px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(221, 212, 212, 0.59);
+}
+button:hover{
+    background-color: #464203;
+}
+.imgbox{
+    position: relative;
+    width: 80%;
+    height: 90%;
+}
+.imgbox img{
+    position: relative;
+    height: 115%;
+    width: calc(103% - 80px);
+    top: -50px;
+    right: -110px;
+   
+    box-shadow: 0 15px 100px rgba(243, 115, 115, 0.59);
+}
+@keyframes animateUser{
+    50%{
+        right: 30px;
+        top: -20px;
+    }
+
+}
+.imgbox #splash{
+    position: absolute;
+    top: -6%;
+    left: -5%;
+    transform: translate((-50%,-50%) rotate(-35deg));
+    width: 110%; 
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    50%{
+        right: 39px;
+        top: -20px;
+    }
+
+}
+@keyframes object1{
+    50%{
+        right:-33%;
+        top: 20%;
+    }
+
+}
+@keyframes object2{
+    50%{
+        left:95%;
+        top: 19%;
+    }
+
+}
+.about{
+   
+    
+    width: 100%;
+    margin-top: -0.50px;
+    text-align: center;
+    padding-top: -105px;
+    display: flex;
+    font-size: 1.2rem;
+    padding:  -1rem;
+    text-align: center;
+    
+    
+}
+
+.rdm{
+    left: -60px;
+}
+
+.about-img img{
+    width: 50vw;
+    transform: scaleX(-1);
+    
+}
+
+.about-content{
+    padding-top: 40px;
+}
+
+/*-------skill-------*/
+
+.skill{
+    
+  
+    margin-top:-70px;
+    text-align: left;
+    padding-left: 100px;
+    width: -40%;
+    padding-top: 50px;
+      
+}
+.skills-bar {
+    padding: 0px 20px;
+  }
+  
+  .skills-bar .bar {
+    margin: 25px 30px;
+  }
+  
+ 
+  .skills-bar .bar .info {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    
+  }
+  
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 500px;
+    background: #f5f5c8;
+    border-radius: 90px;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line span {
+    position: absolute;
+    background: #fa1b0b;
+    height: 100%;
+    border-radius: 0px;
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: animate 1s 2s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .progress-line .MySQL {
+    width: 65%;
+  }
+  .progress-line .Python {
+    width: 50%;
+  }
+  .progress-line .Excel {
+    width: 80%;
+  }
+  .progress-line .PowerBi {
+    width: 70%;
+  }
+  .progress-line .Visualization {
+    width: 70%;
+  }
+  
+  .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -12px;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 10px;
+    border-top-color: #0818f8;
+    
+  }
+  
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    color: #e6dede;
+    font-size: 15px;
+    font-weight: 500;
+    background: #3a3a3a;
+    padding: 1px 8px;
+    border-radius: 15px;
+  }
+  
+  .progress-line .MySQL::after {
+    content: "65%";
+  }
+  .progress-line .Python::after {
+    content: "50%";
+  }
+  .progress-line .Excel::after {
+    content: "80%";
+  }
+  .progress-line .PowerBi::after {
+    content: "70%";
+  }
+  .progress-line .Visualization::after {
+    content: "70%";
+  }
+  
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(231, 247, 9);
+}
+.course-col{
+    flex-basis: 48%;
+    color: #ee0909;
+    background-image:url("https://img.freepik.com/premium-photo/dangerous-anonymous-hacker-man-black-hooded-using-computer-breaking-into-security-data-corporate-server-he-sitting-working-black-background-internet-crime-cyber-attack-security-concept_44289-1307.jpg");
+    border-radius:30px;
+    margin-bottom: 50%;
+    padding: 20px 60px;
+    transition: 2s;
+}
+body {
+    background-image: url("https://wallpapers.com/images/hd/professional-background-53kprhryuo5bszds.jpg");
+  }
+/* ////......Contact......///// */
+
+.contact {
+    
+    position: relative;
+    height: 92vh;
+    
+  }
+  
+  .contact-content {
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    transform: translate(-30%, -50%);
+    text-align: center;
+  }
+  
+  .contact-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ee1d0e;
+    padding-bottom: 0.5rem;
+  }
+  
+  .contact-content .mail {
+    color: #f1efed;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+    
+  }
+  
+  .contact-content .links {
+    color: #3b25b7;
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    font-size: 1rem;
+  }
+  
+  .contact-content a {
+    text-decoration: none;
+    color: #25b79f;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+    font-size: 1.3rem;
+  }
+  .contact a:hover,.links a:hover{
+    color: #f72004;
+    box-shadow: 0 15px 10px rgba(228, 8, 8, 0.59);
+}
+  
+  
